@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik Perez Portatfolio</title>
+    <script src="https://kit.fontawesome.com/50ead72691.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="intro">
+        <div class="container">
+            <!-- menu  -->
+            <div class="text-right lg-hidden">
+                <span onclick="toggleMenu()" class="icon-menu">
+                    <i class="fas fa-bars fa-lg"></i>
+                </span>
+            </div>
+            <nav id="main-menu" class="hidden">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#">Acerca de mi</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="shape relative">
+                <div class="shape-child absolute"></div>
+            </div>
+        </div>
+    </div>
+    <section style="margin-bottom: 50px">
+        <div class="container">
+            <h4>Estudios</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./assets/img/logo_tec.png" alt="Logo Tec de Monterrey">
+                        <h5>Tec de Monterrey</h5>
+                        <span>2014-2020</span>
+                        <p>
+                            Licenciatura en diseño industrial
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./assets/img/logo_academlo.png" alt="Logo Tec de Academlo">
+                        <h5>Academlo</h5>
+                        <span>2014-2020</span>
+                        <p>
+                            Web Full-Stack
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js.js"></script>
+</body>
+</html>

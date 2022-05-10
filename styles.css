@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins'
+}
+
+/* layout */
+.container {
+    width: 90%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+/* Intro */
+.intro {
+    min-height: 100vh;
+    background-color: #197F5B;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 75% 100%, 25% 100%, 0 68%);
+
+}
+nav {
+    background-color: white;
+}
+
+nav a, .icon-menu {
+    color: #197f5b;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.icon-menu {
+    color: white;
+}
+
+.text-right {
+    text-align: right;
+}
+
+nav {
+    max-height: 100vh;
+    transition: max-height 1s;
+}
+
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+}
+
+/* Components */
+.card {
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+}
+
+@media(min-width: 768px) {
+    .row {
+        display: flex;
+    }
+    .col-md-6 {
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+/* Desktop */
+@media(min-width: 992px) {
+    .lg-hidden {
+        display: none;
+    }
+    #main-menu {
+        max-height: none;
+    }
+    nav {
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav a {
+        color: white;
+    }
+    nav li {
+        display: inline-block;
+    }
+}
+
+
+.shape {
+    height: 80vh;
+    width: 80vw;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+.shape-child {
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+.class-example {
+    color: black;
+}
